@@ -12,10 +12,10 @@ codename2="sofiar" # codename2 second define
 buildtype2="userdebug" # define userdebug build or eng
 
 rom="kangos" # set rom makefiles like lineage or omni (it mandatory for lunch devices example lunch lineage_evert-userdebug)
-kernelzip=obj/KERNEL_OBJ/arch/arm64/boot/
+kernelzip="obj/KERNEL_OBJ/arch/arm64/boot/" # kernel directory
 
-DTB=Image.gz-dtb
-GZ=Image.gz
+DTB="Image.gz-dtb" # kernel image with dtb
+GZ="Image.gz" # kernel image without dtb
 
 outfolders="/home/seba_3567/Escritorio/kangos/out/target/product/"
 home="/home/seba_3567/Escritorio/kangos/"
