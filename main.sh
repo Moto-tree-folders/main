@@ -26,17 +26,15 @@ repo sync --force-sync $cores
 cd build && source envsetup.sh
 cd ..
 
-if lunch1 "$allowbuild" = "1"
+if lunch1 "$allowbuild" = "1" then
    echo "launch for 1 devices"
-then
     lunch "$rom"_$codename1-$buildtype1
     m bacon $cores
 else not detect two devices
 fi 
 
-if lunch2 "$allowbuild" = "2"
-   echo "launch for two devices"
-then   
+if lunch2 "$allowbuild" = "2" then
+   echo "launch for two devices"   
     lunch "$rom"_$codename1-$buildtype1
     m  $cores
     lunch "$rom"_$codename2-$buildtype2
